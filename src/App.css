@@ -1,38 +1,30 @@
 .App {
   text-align: center;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  padding-top: 20px; /* fixed the padding */
+  box-sizing: border-box;
+  font-size: small;
+  color: rgb(141, 141, 219);
+  background-image: url("./assets/background3.jpg");
+  background-size: cover;        /* Ensures the image covers the entire background */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-attachment: fixed;  /* Makes the background image fixed on scroll */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  background-color: #f4f4f4;
 }
